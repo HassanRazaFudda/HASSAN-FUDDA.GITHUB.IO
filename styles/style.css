@@ -1,6 +1,4 @@
-body{
-    background-color: #000;
-}
-p{
-    color: #fff;
+.para{
+    background-color: rgba(114, 107, 107, 0.89);
+    color: #000;
 }
