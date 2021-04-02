@@ -1,0 +1,81 @@
+/* body{
+    background-color: black;
+}
+.main-content 
+{
+    margin: auto;
+    width: 80%;
+}
+.left-content
+{
+    position: relative;
+    display: block;
+}
+.person-name
+{
+    position: absolute;
+    color:white;
+    display: block;
+
+} */
+
+body{
+    font-family: sans-serif;
+}
+
+.container
+{
+    width: 1200px;
+    height: 900px;
+    margin-left: 80px;
+    background-color: black;
+    position: absolute;
+}
+
+.left-container
+{
+    width: 470px;
+    height: 900px;
+    background-image: url("/images/niko_img.jpg");
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.right-container {
+    
+    width: 60%;
+    background-color: rgba(54, 54, 54, 0.473);
+    margin-top: 30px;
+    height: 800px;
+    margin-left: 471px;
+    position: absolute;
+}
+
+.name-container
+{
+    width: 100%;
+    height: 70px;
+    margin-top: 720px;
+}
+.name-container h2{
+    color: white;
+    line-height: 70px;
+    margin-left: 24%;
+    font-size: 50px;
+    font-weight: bold;    
+
+}
+.position-container
+{
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+}
+.position-container span{
+    color: #00c483;
+    line-height: 40px;
+    margin-left: 38%;
+    font-size: 20px; 
+    font-weight: bold;   
+
+}
