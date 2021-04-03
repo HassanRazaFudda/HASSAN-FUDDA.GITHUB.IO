@@ -27,15 +27,17 @@
 
 body{
     font-family: sans-serif;
+    background-color: black;
 }
 
 .container
 {
     width: 1200px;
     height: 900px;
-    margin-left: 80px;
+    margin-left: 8%;
     background-color: black;
     position: absolute;
+
 }
 
 .left-container
@@ -44,16 +46,6 @@ body{
     height: 900px;
     background-image: url("https://n.foxdsgn.com/niko/black/wp-content/uploads/sites/4/2019/03/niko_img.jpg");
     background-repeat: no-repeat;
-    position: absolute;
-}
-
-.right-container {
-    
-    width: 60%;
-    background-color: rgba(54, 54, 54, 0.473);
-    margin-top: 30px;
-    height: 800px;
-    margin-left: 471px;
     position: absolute;
 }
 
@@ -85,3 +77,38 @@ body{
     font-weight: bold;   
 
 }
+
+
+.right-container {
+    
+    width: 52.5%;
+    background-color: rgba(44, 44, 44, 0.473);
+    margin-top: 30px;
+    height: 860px;
+    margin-left: 470px;
+    position: absolute;
+}
+
+.right-content {
+    height: 860px;
+    width: 90%;
+    margin-left: 40px;
+    position: absolute;
+}
+.about-me {
+    margin-top: 35px;
+    height: 300px;
+    width: 100%;
+    /* background-color:rgba(44, 44, 44, 0.473); */
+}
+
+.my-services {
+    width: 100%;
+    height: 400px;
+
+
+}
+ .tbl td {
+     width: 270px;
+     height: 165px;
+ }
