@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./index.html">
+        <label for="name">Name</label>
+        <input type="text" name="" id="name"><br>
+        <label for="gender">gender</label>
+        <input type="radio" value="male" name="gender" id="m" >male
+        <input type="radio" value="female" name="gender" id="f">female
+        <br>
+        <label for="address">address</label>
+        <textarea name="" id="address"></textarea>
+        <br>
+        <label for="education">education</label>
+        <select name="" id="education">
+            <option value=" "></option>
+            <option value="Matric">Matriculation</option>
+            <option value="Inter">Intermediate</option>
+            <option value="Graduated">Graduation</option>
+        </select>
+        <br>
+        <label for="profession">profession</label>
+        <select name="" id="profession">
+            <option value=" "> </option>
+            <option value="Job">job</option>
+            <option value="Bussiness">Trading</option>
+            <option value="freelancer">Freelancing</option>
+        </select>
+        <br>
+        <input type="reset" onclick="pushing()" value = "Submit Record">
+    </form>
+    <br>
+    <button  onclick="getData()">View All Records</button>
+    <br>
+    <table id = "record" border="1" cellspacing="0" cellpadding="2px">
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>Education</th>
+            <th>Profession</th>
+        </tr>
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>
