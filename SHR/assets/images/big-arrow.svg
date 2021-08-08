@@ -1,0 +1,30 @@
+<?xml version="1.0"?><svg width="874" height="677" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <title>big arrow</title>
+ <defs>
+  <linearGradient id="linearGradient3702">
+   <stop stop-color="#ced1f2" id="stop3704" offset="0"/>
+   <stop stop-color="#1d42c9" stop-opacity="0" id="stop3706" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient3630">
+   <stop stop-color="#d2d0f3" offset="0" id="stop3632"/>
+   <stop stop-color="#1c3db8" offset="1" id="stop3634"/>
+  </linearGradient>
+  <linearGradient id="linearGradient2856">
+   <stop stop-color="#3c44dc" id="stop2858" offset="0"/>
+   <stop stop-color="#0d1f6a" id="stop2860" offset="1"/>
+  </linearGradient>
+  <linearGradient y2="0.534698" x2="1.362896" y1="0.529411" x1="0.076403" id="linearGradient1483" xlink:href="#linearGradient3702"/>
+  <linearGradient y2="0.849797" x2="1.050812" y1="0.150331" x1="-0.063988" id="linearGradient1487" xlink:href="#linearGradient2856"/>
+  <radialGradient r="17.099951" fy="7.098344" fx="-15.475302" cy="7.098344" cx="-15.475302" gradientTransform="matrix(27.048, -2.60547, -3.01769, -20.9391, 620.745, 365.415)" gradientUnits="userSpaceOnUse" id="radialGradient1489" xlink:href="#linearGradient3630"/>
+ </defs>
+ <metadata id="metadata7">image/svg+xmlArrow Blue Right2005-10-31Jean-Victor Balinjean.victor.balin@gmail.comicon</metadata>
+ <g>
+  <title>Layer 1</title>
+  <g id="layer1">
+   <path fill="url(#linearGradient1487)" stroke-width="0.1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" id="path2125" d="m1.183563,140.565552c0,-19.798279 24.215912,-19.798279 24.215912,-19.798279c0,0 388.636322,0 411.670471,0c1.181793,-19.798279 0,-98.991425 0,-98.991425c0.221069,-8.854736 2.641235,-16.757446 12.664917,-20.115997c10.023743,-3.358582 21.529663,-1.53241 29.287903,4.64859l387.45459,316.772522c10.214294,8.620758 10.214294,22.314056 0,30.934784l-387.45459,316.772583c-7.75824,6.180908 -19.26416,8.007202 -29.287903,4.64856c-10.023682,-3.358521 -12.443848,-11.261292 -12.664917,-20.115967c0,0 0,-79.193237 0,-98.991455c-24.215881,0 -412.852203,0 -412.852203,0c0,0 -24.215912,0 -24.215912,-19.798279c0,-118.789703 1.181732,-277.175964 1.181732,-395.965637z"/>
+   <path fill="url(#radialGradient1489)" stroke-width="0.1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" d="m29.183197,532.200317c0.032013,-116.868896 1.481567,-270.114502 1.513519,-387.303894c9.749603,0 383.635498,0 406.37323,0c15.727997,0.02002 28.710388,-10.049805 29.513153,-22.891754c1.292908,-21.659119 0.18985,-80.33313 0,-91.567017l376.860077,308.110718l-376.860077,307.492035c0.000916,-11.665955 0,-71.655945 0,-89.710938c0.004181,-13.327576 -13.211761,-24.132568 -29.513153,-24.12915c-23.905487,0 -398.1633,0 -407.886749,0z" id="path3636"/>
+   <path fill="url(#linearGradient1483)" stroke-width="0.1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" id="path3696" d="m195.667603,164.694687c99.704407,0 222.924927,0.732361 236.105133,0c77.944977,-4.330872 29.513123,-83.523941 77.944977,-63.725693c48.431763,19.798279 290.590881,237.579376 290.590881,237.579376l-267.888489,216.543671c-71.134247,-157.148865 -174.683167,-302.904556 -336.752502,-390.397354z"/>
+  </g>
+  <rect id="svg_1" height="1" width="0" y="91.511719" x="539.570313" stroke-width="5" fill="#FF0000"/>
+ </g>
+</svg>

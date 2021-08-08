@@ -1,0 +1,540 @@
+*
+{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+.serviceHover a:hover{
+  text-shadow: 2px 2px 8px blueviolet;
+}
+
+.header
+{
+    background-color: rgba(0, 0, 0, 0.5);  
+    height: 90px;
+    width: 100%;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    box-shadow:-2px 2px 20px -2px;
+}
+.logo
+{
+    width: 20%;
+    position: absolute;
+}
+.logo h1
+{
+    padding: 4% 4% 4% 9%; 
+    margin: auto;
+    color: seashell;
+}
+.main1{
+  width: 100%;
+  height: 700px;
+}
+.nav-main
+{
+
+    width: 40%;
+    height: 60px;
+    margin-top: 10px;
+    position: absolute;
+    margin-left: 25%;
+    margin-right: 35%;
+}
+.nav-main ul
+{
+    margin: 0;
+
+}
+.nav-main ul li
+{
+    list-style: none;
+    float: left;
+    
+}
+.nav-main ul li a
+{
+    display: inline-block;
+    
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bolder;
+    color:#000;
+}
+.contact
+{
+    
+    position: absolute ;
+    right: 12%;
+    margin-top: 15px;
+}
+
+.contact a
+{
+    display: block;
+    background: skyblue;
+    padding: 10px 30px 12px 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+.signin
+{
+    
+    position: absolute ;
+    right: 2%;
+    margin-top: 15px;
+}
+
+.signin a
+{
+    display: block;
+    background: skyblue;
+    padding: 10px 30px 12px 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+.face
+{
+    position: absolute;
+    right: 35%;
+    margin-top: 20px;
+    /*border: 1px solid #000000;
+    border-radius:8px ;*/
+}
+.insta
+{
+    position: absolute;
+    right: 31%;
+    margin-top: 20px;
+}
+.twit
+{
+    position: absolute;
+    right: 27%;
+    margin-top: 20px;
+}
+
+.in
+{
+    position: absolute;
+    right: 23%;
+    margin-top: 17px;
+}
+
+
+
+.home{
+	height: 580px;
+	overflow:hidden;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.home .slide{
+	position: absolute;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	z-index:0; 
+	display:none;
+	padding:0 15px;
+	animation: slide 2s ease;
+}
+.home .slide.active{
+	display: flex;
+}
+@keyframes slide{
+	0%{
+		transform:scale(1.1);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+	
+}
+
+.home .container{
+	 flex-grow: 1;
+}
+.home .caption{
+	width:50%;
+}
+.home .caption h1{
+	font-size:42px;
+	color:#000000;
+	margin:0;
+	
+}
+.home .slide.active .caption h1{
+	opacity:0;
+	animation: captionText .5s ease forwards;
+	animation-delay:1s;
+}
+.home .caption p{
+	font-size: 18px;
+	margin:15px 0 30px;
+	color:#222222;
+}
+.home .slide.active .caption p{
+	opacity:0;
+	animation: captionText .5s ease forwards;
+	animation-delay:1.2s;
+}
+.home .caption a{
+ display: inline-block;
+ padding:10px 30px;
+ background-color: #000000;
+ text-decoration: none;
+ color:#ffffff;
+}
+
+.home .slide.active .caption a{
+	opacity:0;
+	animation: captionText .5s ease forwards;
+	animation-delay:1.4s;
+}
+
+@keyframes captionText{
+	0%{
+		opacity:0; transform: translateX(-100px);
+	}
+	100%{
+	 opacity:1; transform: translateX(0px);	
+	}
+}
+
+.home .controls .prev,
+.home .controls .next{
+ position: absolute;
+ z-index:2;
+ top:50%;
+ height:40px;
+ width: 40px;
+ margin-top: -20px;
+ color:#ffffff;
+ background-color: rgba(0, 0, 0, 0.5);
+ text-align: center;
+ line-height: 40px;
+ font-size:20px;
+ cursor:pointer;
+ transition: all .5s ease;
+}
+.home .controls .prev:hover,
+.home .controls .next:hover{
+	background-color: #000000;
+}
+.home .controls .prev{
+ left:0;
+}
+.home .controls .next{
+ right:0;
+}
+
+.indicator{
+	position: absolute;
+	left:48%;
+  margin-top: 39%;	
+  z-index: 2;
+	transform: translateX(-50%);
+}
+
+.home .indicator div{
+	display: inline-block;
+	width:25px;
+	height: 25px;
+	color:#ffffff;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius:50%;
+	text-align: center;
+	line-height: 25px;
+  margin:0 3px;
+  cursor: pointer;
+}
+
+
+.home .indicator div.active{
+ background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*responsive*/
+@media(max-width: 767px){
+	.controls{
+		display: none;
+	}
+}
+
+.about
+{
+  margin-top: 0px;
+  margin-left: 5%;
+  width: 90%;
+  height: 1000px;
+}
+
+.about-heading
+{
+  width: 100%;
+  height: 60px;
+  border-bottom: 2px solid #000000;
+  line-height: 60px;
+}
+.about-heading h1
+{
+  font-size: 50px;
+  margin-left: 42%;
+  color: rgba(0, 0, 0, 0.75);
+}
+.para pre
+{
+  margin-left: 4%;
+  color: rgba(0, 0, 0, 0.75);
+  font-size: 22px;
+}
+
+.service_container
+{
+  width: 100%;
+  height: 860px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  margin-top: -20px;
+}
+
+.heading_service_container
+{
+  width: 90%;
+  margin-left: 5%;
+  height: 80px;
+  border-bottom: 2px solid #000;
+  line-height: 80px;
+
+}
+
+.heading_service_container h1
+{
+  font-size: 50px;
+  margin-left:37%;
+  color: rgba(0, 0, 0, 0.75);}
+
+
+.service1 , .service2 , .service3 , .service4 , .service5 , .service6 , .service7 , .service8 , .service9
+{
+  width: 270px;
+  height: 270px;
+  margin-top: 25px;
+  position: absolute;
+}
+.service2 ,.service5 ,.service8
+{
+  margin-top: 260px;
+}
+
+.service3 , .service6 , .service9
+{
+  margin-top: 515px;
+}
+
+
+.service1 , .service2 , .service3
+{
+  margin-left: 3.5%;
+}
+
+.service4 , .service5 , .service6
+{
+  margin-left: 34%;
+}
+
+.service7 , .service8 , .service9
+{
+  margin-left: 67.5%;
+}
+.service1 img , .service2 img , .service3 img, .service4 img, .service5 img, .service6 img, .service7 img, .service8 img, .service9 img
+{
+  margin-left: 60px;
+  margin-top:10px;
+}
+
+.service_container h3
+{
+  color: blueviolet;
+  margin-left: 30px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 0px;
+}
+.service5 h3
+{
+  margin-left: 50px;
+}
+.service3 h3 ,  .service6 h3 , .service7 h3 , .service8 h3 
+{
+  margin-left: 70px;
+}
+.service6 h3 , .service8 h3
+{
+  margin-left: 78px;
+}
+.pack1_container
+{
+height: 420px;
+border-bottom: 2px solid rgba(0,0,0,0.05);
+}
+.pack1
+{
+  position: absolute;
+  height: 340px;
+  width: 30%;
+  box-shadow:-40px 20px 10px -2px rgba(0, 0, 0, 0.5);
+  margin-left:50px; 
+  border-radius:8px ;
+}
+.pack1 img
+{
+  border-radius: 8px;
+}
+.pack1_detail
+{
+  width: 40%;
+  height: 340px; 
+  margin-left: 45%;
+  margin-top: 30px;
+}
+.pack2_container
+{
+height: 420px;
+margin-top: 33px;
+border-bottom: 2px solid rgba(0,0,0,0.05);
+
+}
+.pack2
+{
+  position: absolute;
+  height: 340px;
+  width: 30%;
+  box-shadow:40px 20px 10px -2px rgba(0, 0, 0, 0.5);
+  right:120px; 
+  border-radius:8px ;
+}
+.pack2 img
+{
+  border-radius: 8px;
+}
+.pack2_detail
+{
+  width: 60%;
+  height: 340px;
+  margin-left: 2%;
+
+}
+
+.pack3_container
+{
+height: 420px;
+margin-top: 33px;
+
+}
+.pack3
+{
+  position: absolute;
+  height: 340px;
+  width: 30%;
+  box-shadow:-40px 20px 10px -2px rgba(0, 0, 0, 0.5);
+  margin-left:50px; 
+  border-radius:8px ;
+}
+.pack3 img
+{
+  border-radius: 8px;
+}
+.pack3_detail
+{
+  width: 60%;
+  height: 340px; 
+  margin-left: 45%;
+}
+.footer_top
+{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.075);
+  width: 100%;
+  height: 300px;
+  border-bottom:25px solid rgba(0, 0, 0, 0.05);
+  margin-top: 00px;
+}
+.footer_top_logo
+{
+  position: absolute;
+  height: 100%;
+  width: 35%;
+}
+.footer_top_logo img
+{
+  margin-top: 60px;
+  margin-left: 70px;
+  opacity: 0.5;
+}
+.footer_top_head
+{
+  position: absolute;
+  margin-left: 35%;
+  width: 35%;
+  height: 100%;
+}
+.footer_top_contact
+{
+  position: absolute;
+  margin-left: 70%;
+  width: 25%;
+  height: 100%;
+}
+.footer
+{
+  position: absolute;
+  vertical-align: bottom;
+  margin-top: 325px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 50px;
+}
+.footer p
+{
+  color: #000000;
+  margin-left: 420px;
+}
+.sign_main{
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 450px;
+  width: 500px;
+  height: 450px;
+  box-shadow: 5px 10px 18px #888888;
+  border-radius: 10px;
+}
+.plc::placeholder{
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+textarea::placeholder{
+  font-size: 20px;
+  margin-left: 40px;
+}
