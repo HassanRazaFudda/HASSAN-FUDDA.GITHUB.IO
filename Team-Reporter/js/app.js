@@ -187,7 +187,7 @@ const loggedIn = () => {
         }
     }
     else {
-        location.href = "./../login"
+        location.href = "./login"
     }
 }
 
