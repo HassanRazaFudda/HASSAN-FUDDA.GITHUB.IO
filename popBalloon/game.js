@@ -1,15 +1,3 @@
-firebase.auth().onAuthStateChanged((user)=>{
-    if(!user){
-        location.replace("index.html")
-    }
-})
-
-
-function logout(){
-    firebase.auth().signOut()
-}
-
-
 const checkLevel = () => {
     let level = localStorage.getItem("level");
     return level
@@ -124,7 +112,14 @@ const setupGameUI = () => {
     startGame();
 }
 
-
+const startGame = () => {
+    statusDiv.style.display = "block"
+    statusDiv.style.backgroundColor = "white"
+    setTimeout(() => {
+        statusDiv.style.display = "none"
+        statusDiv.innerHTML = '';
+    }, 500);
+}
 
 const body = document.getElementsByTagName("body")[0]
 body.addEventListener("load", setupGameUI())
@@ -201,3 +196,5 @@ const checkLastLevel = level => {
         body.style.overflow = "hidden";
     }
 }
+
+

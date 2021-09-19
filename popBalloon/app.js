@@ -29,6 +29,8 @@ function signUp(){
 }
 
 
-
+function logout(){
+    
+}
 
 
