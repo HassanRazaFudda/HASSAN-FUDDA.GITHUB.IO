@@ -19,7 +19,7 @@
 
 } */
 #body{
-    background-image:url("./images/niko_img.jpg");
+/*     background-image:url("./images/niko_img.jpg"); */
     background-repeat: no-repeat;
     width: 500px;
     height: 900px;
@@ -44,7 +44,7 @@ body{
 {
     width: 470px;
     height: 900px;
-    background-image: url("https://n.foxdsgn.com/niko/black/wp-content/uploads/sites/4/2019/03/niko_img.jpg");
+    background-image: url("./images/niko_img.jpg");
     background-repeat: no-repeat;
     position: absolute;
 }
